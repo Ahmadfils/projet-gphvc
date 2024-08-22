@@ -1,0 +1,109 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+header .px-3 .d-flex a img{
+  height: 40px;
+}
+.container{
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+}
+.container-dash{
+  padding: 10px;
+}
+.container-dash h1{
+  padding-left: 5px;
+
+}
+.container-dash i{
+  padding-right: 5px;
+}
+.row{
+  padding: 5px;
+  width: 100%;
+  margin: 0;
+}
+.col-dash{
+  padding-left: 20px;
+  display: flex;
+}
+.col-land{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color:#2A3F54 ;
+  padding: 20px;
+  font-size: 20px;
+  width: 100%;
+  margin: 0;
+  height: auto;
+}
+ 
+.about-img img{
+  width: 600px;
+  height: 350px;
+  padding: 20px;
+} 
+.row-feature{
+  padding: 5px;
+  padding-top: 10px;
+  font-size: 15px;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 5px;
+}
+.col-feature{
+ align-content: center;
+ overflow: hidden;
+ padding: 5px;
+}
+.col-feature img{
+  width: 250px;
+  height: 200px;
+}
+.col-price{
+  font-size: 15px;
+}
+.col-about{
+  background:#2A3F54 ;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+.col-about p{
+  font-size: 20px;
+}
+.container-footer{
+  width: 100%;
+  padding: 5px;
+  align-content: center;
+}
+.dash-table{
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle:not(:focus) {
+  outline: 0;
+}
+
+
+
+
