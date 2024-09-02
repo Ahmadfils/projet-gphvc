@@ -129,7 +129,7 @@ if(isset($_POST['form1'])){
 										<div class="ln_solid"></div>
 										<div class="item form-group">
 											<div class="col-md-6 col-sm-6 offset-md-3">
-												<button class="btn btn-primary" type="button">Cancel</button>
+												<a href="client.php"><button class="btn btn-primary" type="button">Cancel</button></a> 
 												<button class="btn btn-primary" type="reset">Reset</button>
 												<button type="submit" name="form1" class="btn btn-success">Submit</button>
 											</div>

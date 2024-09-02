@@ -37,10 +37,10 @@
                   <li><a href="index.php"><i class="fa fa-home"></i> Home </a>
                   </li>
                   
-                  <li><a><i class="fa fa-desktop"></i> Application <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-desktop"></i> Plateforme <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="site_active.php">Site active</a></li>
-                      <li><a href="site_absolete.php">Site Absolete</a></li>
+                      <li><a href="site_active.php">Active</a></li>
+                      <li><a href="site_absolete.php">Expiré</a></li>
                     </ul>
                   </li>
                   

@@ -107,6 +107,7 @@ if (isset($_SESSION['message_del'])) {
                                      $nbrJoursRestant = $periodeLicense-$nbrJours;
                                      $jourAccumuleEnPourcentage = ($nbrJours*100)/$periodeLicense;
                                      $PourcentageFormate = round($jourAccumuleEnPourcentage, 2);
+                                     $sujet = "Message du Setic";
                              
                                      if($nbrJours <= $periodeLicense){ 
                                        echo
@@ -129,7 +130,7 @@ if (isset($_SESSION['message_del'])) {
                                             <td>
                                               '.$mail.'
                                               <br />
-                                              <small> <a href="#" class="badge badge-primary" style="padding: 3px">Envoyer un mail</a></small>
+                                              <small> <a href="https://mail.google.com/mail/u/0/?view=cm&to='.$mail.'&sujet='.urlencode($sujet).' target="_blank" rel="noopener noreferrer"" class="badge badge-primary" style="padding: 3px">Envoyer un mail</a></small>
                                             </td>
                                             <td class="project_progress">  
                                                   <div class="progress progress_sm">

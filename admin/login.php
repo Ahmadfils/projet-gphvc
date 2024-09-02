@@ -5,9 +5,6 @@ include("../inc/config.php");
 include("../inc/CSRF_Protect.php");
 
 $csrf = new CSRF_Protect();
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -65,19 +62,20 @@ $csrf = new CSRF_Protect();
 
   if(isset($_POST['loginform'])){
 
-    $email = strip_tags($_POST['inputEmail']);
+    $username = strip_tags($_POST['username']);
     
-     $query = $pdo->prepare("SELECT * FROM utilisateur WHERE email = ?");
-     $query->execute(array($email));
+     $query = $pdo->prepare("SELECT * FROM utilisateur WHERE username = ?");
+     $query->execute(array($username));
      $total = $query->rowCount();
      $data = $query->fetchAll(PDO::FETCH_ASSOC);
 
-     if($total == 0){
-      
-      echo "<script>
+     foreach($data as $row){
+      if($row['email'] == ''){
+        
+         echo "<script>
             window.onload = function() {
                 Toastify({
-                    text: 'L'utilisateur n'existe pas',
+                    text:'L'utilisateur n'existe pas!',
                     duration: 5000,
                     close: true,
                     position: 'center',
@@ -88,10 +86,8 @@ $csrf = new CSRF_Protect();
                 }).showToast();
             };
         </script>";
-
-     }else{
-      
-      foreach($data as $row) {
+        
+      }else{
         $row_password = $row['pswd'];
       }
       if(md5($_POST['inputPass']) != $row_password){
@@ -130,12 +126,12 @@ $csrf = new CSRF_Protect();
           <form id="loginForm" method="POST">
             <?php $csrf->echoInputField();?>
             <div class="form-group">
-              <label for="email">Email address</label>
+              <label for="email">Username </label>
               <div class="input-group">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-envelope"></i></span>
                 </div>
-                <input type="email" class="form-control" id="email" name="inputEmail" placeholder="Enter email" required>
+                <input type="text" class="form-control" id="usename" name="username" placeholder="Enter Username" required>
               </div>
             </div>
             <div class="form-group">

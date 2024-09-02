@@ -86,7 +86,7 @@ require_once 'topnav.php';
 												<span id="addClient" class="text-danger" style="display: none;">
 												Vous pouvez ajouter un nouveau proprietaire! 
 												<a href="add_proprietaire.php">Cliquez-ici</a>
-											    </span>
+											  </span>
 											</div>
 										</div>
 										<div class="form-group row">

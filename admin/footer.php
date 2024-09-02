@@ -60,7 +60,7 @@
         }
     
     });
-    
-</script>
-  </body>
+   
+  </script>
+ </body>
 </html>
